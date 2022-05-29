@@ -1,0 +1,48 @@
+.table {
+  margin-top: 20px;
+  border-collapse: collapse;
+
+  thead {
+    th {
+      text-align: center;
+      background: $secondary;
+      padding: 9px 15px;
+      color: $black;
+      text-transform: uppercase;
+
+      &:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+
+  tbody {
+    td {
+      text-align: center;
+      padding: 9px 15px;
+      color: $white;
+      border-bottom: 1px solid rgba($secondary, 0.5);
+    }
+  }
+
+  .button {
+    border: 1px solid rgba($primary, 0.3);
+    background: rgba($primary, 0.1);
+    color: $white;
+    padding: 5px 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+
+    &:hover {
+      background: $primary;
+      color: $black;
+    }
+  }
+}

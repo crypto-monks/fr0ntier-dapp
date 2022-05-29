@@ -1,0 +1,91 @@
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+
+  .menubar {
+    display: flex;
+    align-items: center;
+
+    .menu {
+      text-decoration: none;
+      color: $white;
+      font-size: 15px;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      background-color: rgba($secondary, 0.2);
+      border: 1px solid rgba($secondary, 0.4);
+      text-transform: none;
+      height: 36px;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: rgba($secondary, 1);
+        color: $black;
+
+        .badge {
+          background: $black;
+          color: $secondary;
+        }
+      }
+
+      &.selected {
+        background-color: rgba($secondary, 1);
+        color: $black;
+
+        .badge {
+          background: $black;
+          color: $secondary;
+        }
+      }
+
+      .badge {
+        display: inline-block;
+        background: $secondary;
+        color: $black;
+        font-weight: bold;
+        font-size: 12px;
+        margin-left: 5px;
+        padding: 0px 3px;
+        border-radius: 8px;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  .connect {
+    text-decoration: none;
+    color: $white;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 8px 16px;
+    border-radius: 3px;
+    background-color: rgba($secondary, 0.2);
+    border: 1px solid rgba($secondary, 0.4);
+    text-transform: none;
+    height: 36px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: rgba($secondary, 1);
+      color: $black;
+    }
+
+    &:global(.Mui-disabled) {
+      color: $white;
+    }
+  }
+}

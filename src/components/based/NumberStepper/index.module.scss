@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  background: transparent;
+  border: 1px solid rgba($secondary, 0.3);
+  width: fit-content;
+  align-items: center;
+  border-radius: 5px;
+
+  .input {
+    border: none;
+    outline: none;
+
+    & * {
+      border: none;
+      outline: none;
+    }
+
+    & input {
+      font-size: 26px;
+      width: 45px;
+      padding: 7px;
+      text-align: center;
+      color: $white;
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+
+    .arrow {
+      min-width: initial;
+      width: 27px;
+      height: 27px;
+      color: $white;
+      transition: all 0.3s;
+      border-radius: 0;
+      border-bottom: 1px solid rgba($secondary, 0.3);
+      border-left: 1px solid rgba($secondary, 0.3);
+
+      &:first-child {
+        border-top-right-radius: 3px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 3px;
+        border-bottom: none;
+      }
+
+      &:hover {
+        background: rgba($secondary, 0.3);
+      }
+
+      & > span {
+        border-radius: 0;
+      }
+    }
+  }
+}
